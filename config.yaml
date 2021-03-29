@@ -1,0 +1,192 @@
+baseURL: http://examplesite.org
+title: Airspace | Creative Agency Hugo Template
+theme: airspace-hugo
+paginate: '4'
+summaryLength: '30'
+disqusShortname: ''
+disableLanguages: []
+outputs:
+  home: HTML
+markup:
+  goldmark:
+    renderer:
+      unsafe: yes
+params:
+  author: Themefisher
+  contact_form_action: '#'
+  cookies:
+    enable: yes
+    expire_days: 2
+  description: This is meta description
+  email: demo@email.com
+  gmap:
+    enable: yes
+    gmap_api: AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU
+    map_latitude: '51.5223477'
+    map_longitude: '-0.1622023'
+    map_marker: images/marker.png
+  google_analitycs_id: ''
+  location: North Main Street,Brooklyn Australia
+  logo: images/logo.png
+  logo_width: 150px
+  mobile: 0124857985320
+  multi_author: no
+  nav_button:
+    enable: yes
+    label: Get A Quote
+    link: contact
+  plugins:
+    css:
+      - attributes: media='screen'
+        link: plugins/bootstrap/bootstrap.min.css
+      - attributes: ''
+        link: plugins/Ionicons/css/ionicons.min.css
+      - attributes: ''
+        link: plugins/magnific-popup/magnific-popup.min.css
+      - attributes: ''
+        link: plugins/slick/slick.css
+    js:
+      - attributes: ''
+        link: plugins/jQuery/jquery.min.js
+      - attributes: ''
+        link: plugins/bootstrap/bootstrap.min.js
+      - attributes: ''
+        link: plugins/slick/slick.min.js
+      - attributes: ''
+        link: plugins/magnific-popup/magnific-popup.min.js
+      - attributes: ''
+        link: plugins/shuffle/shuffle.min.js
+      - attributes: defer
+        link: plugins/google-map/gmap.js
+  preloader:
+    enable: yes
+    preloader: ''
+  social:
+    - icon: ion-social-googleplus-outline
+      link: '#'
+    - icon: ion-social-linkedin-outline
+      link: '#'
+    - icon: ion-social-pinterest-outline
+      link: '#'
+    - icon: ion-social-dribbble-outline
+      link: '#'
+    - icon: ion-social-twitter-outline
+      link: '#'
+    - icon: ion-social-facebook-outline
+      link: '#'
+  widgets:
+    sidebar:
+      - recent_posts
+      - taxonomy_category
+      - taxonomy_tags
+Languages:
+  en:
+    contentDir: content/english
+    copyright: Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights
+      Reserved
+    languageCode: en-us
+    languageName: En
+    menu:
+      footer:
+        - URL: about
+          name: About
+          weight: 1
+        - URL: project
+          name: Project
+          weight: 2
+        - URL: service
+          name: Service
+          weight: 3
+        - URL: pricing
+          name: Pricing
+          weight: 4
+        - URL: faq
+          name: FAQ
+          weight: 5
+        - URL: contact
+          name: Contact
+          weight: 6
+      main:
+        - URL: /
+          name: Home
+          weight: 1
+        - URL: about
+          name: About
+          weight: 2
+        - URL: project
+          name: Project
+          weight: 3
+        - URL: blog
+          name: Blog
+          weight: 4
+        - hasChildren: yes
+          name: Pages
+          weight: 5
+        - URL: faq
+          name: FAQ
+          parent: Pages
+        - URL: pricing
+          name: Pricing
+          parent: Pages
+        - URL: service
+          name: Service
+          parent: Pages
+        - URL: contact
+          name: Contact
+          weight: 6
+    weight: 1
+  fr:
+    contentDir: content/french
+    copyright: Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights
+      Reserved
+    languageCode: fr-fr
+    languageName: Fr
+    menu:
+      footer:
+        - URL: about
+          name: About
+          weight: 1
+        - URL: project
+          name: Project
+          weight: 2
+        - URL: service
+          name: Service
+          weight: 3
+        - URL: pricing
+          name: Pricing
+          weight: 4
+        - URL: faq
+          name: FAQ
+          weight: 5
+        - URL: contact
+          name: Contact
+          weight: 6
+      main:
+        - URL: /
+          name: Accueil
+          weight: 1
+        - URL: about
+          name: À propos
+          weight: 2
+        - URL: project
+          name: Projet
+          weight: 3
+        - URL: blog
+          name: Blog
+          weight: 4
+        - hasChildren: yes
+          name: Pages
+          weight: 5
+        - URL: faq
+          name: FAQ
+          parent: Pages
+        - URL: pricing
+          name: Tarification
+          parent: Pages
+        - URL: service
+          name: Un service
+          parent: Pages
+        - URL: contact
+          name: Contact
+          weight: 6
+    weight: 2
